@@ -7,10 +7,12 @@ The basic function requirements
 - In the live stream page, the user can see themselves and a bunch of overlays. They can add and remove themselves from the canvas, and the same thing for the overlays
 - There should be a go live button that when the user clicks, the stream starts streaming whats on the canvas to youtube
 This would require for you to write a service that takes video feed from the end user, merges it with the overlays on the canvas and then streams it to youtube
+
 Backend Service 1
 - Simple backend that lets users sign up and sign in (users table)
 - Lets users create a live stream (live streams table)
 - Lets users add overlays/themselves to the live stream (overlays table)
+
 Backend service 2
 This service takes the input stream and the current set of overlays and converts this to an RTMP stream that needs to be forwarded to youtube Frameworks you can use to achieve this include ffmpeg or gstreamer. Read about how you can convert websocket/WebRTC video streams to rtmp
 
