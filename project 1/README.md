@@ -12,7 +12,7 @@ Backend Service 1
 - Simple backend that lets users sign up and sign in (users table)
 - Lets users create a live stream (live streams table)
 - Lets users add overlays/themselves to the live stream (overlays table)
-
+- 
 Backend service 2
 This service takes the input stream and the current set of overlays and converts this to an RTMP stream that needs to be forwarded to youtube Frameworks you can use to achieve this include ffmpeg or gstreamer. Read about how you can convert websocket/WebRTC video streams to rtmp
 
